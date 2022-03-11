@@ -1,0 +1,246 @@
+Name:) Ali Jawad
+
+
+
+Ans #1) 
+     
+a) Arthmetic Operators. they do basic MATHS operations eg. 5+3 , 33-1
+b) Equality operartors. They are used in if else statments eg:  A>B ( > is sign of greater than which in this case A is greater than B)
+c) Logical Operators.   They are used in if else statments eg: A==B $$ c==c ( $$ is a logical opeartor )
+
+
+========================================================================================================================================
+
+Ans #2) 
+
+
+CODE 
+  void main () {
+  var movieTickets = 600;
+  var sixTickets = movieTickets*5;
+  
+  print(sixTickets);
+}
+
+
+CONSOLE 
+
+3000
+
+========================================================================================================================================
+Ans #3)  By using this line of code 
+
+Assuming "one" and "two" are Lists name
+"List <int> diff = one.toSet().difference(two.toSet()).toList()"
+
+and now to put this through code it will look like:
+
+CODE
+
+ void main () {
+   List <int> one = [
+     1,2,3,4,5,6,7
+    ];
+    List <int> two = [
+    3,5,6,7,9,10
+   ];
+  
+   List <int> diff = one.toSet().difference(two.toSet()).toList();
+  
+   print(diff);
+ }
+
+
+CONSOLE	
+
+
+
+[1, 2, 4]
+
+
+
+========================================================================================================================================
+
+
+Ans #4)
+
+
+??:
+
+
+Called also null operator. This operator returns expression on its left, except if it is null,
+ and if so, it returns right expression 
+
+
+
+?:
+Is a Ternary operator. "expression ? option1 : option2
+If expression is true it goes with the option1 and if not, with the option2."
+
+
+========================================================================================================================================
+
+
+Ans #5)
+
+Data Type    Keywords            Description 
+
+Number	     int, double, num	 Numbers in Dart are used to represent numeric literals
+Strings	     String	         Strings represent a sequence of characters
+Booleans     bool	         It represents Boolean values true and false
+Lists	     List	         It contains the actual values in list form
+Maps	     Map	         ---
+
+
+
+========================================================================================================================================
+Ans #6)
+
+
+CODE 
+
+  void main () {
+
+  // a
+  List <int> tableOf7 = [
+7,
+14,
+21,
+28,
+35,
+42,
+49,
+56,
+63,
+70
+  ];
+ // b 
+   List <dynamic> tenNumbers = [1,2,3,4,5,6,7,8,9,10];
+
+// c
+ var map = Map <dynamic, dynamic>.fromIterable(tableOf7);
+ print(map);
+}  
+  
+========================================================================================================================================
+
+Ans #7) 
+
+CODE 
+
+void main () {
+  var correctPw = 'Hello123';
+  print('What is your Password?');
+  var password = stdin.readLineSync();
+
+  if (correctPw != password) {
+    print('Your Password was incorrect. You have one more chance');
+    print('type your password again');
+     var password2 = stdin.readLineSync();
+     if (password2 == correctPw) {
+      print('Correct!');
+    } else { print('Locked out');
+        }
+    }  else {print('Correct!');
+    }
+
+    
+  } 
+
+
+========================================================================================================================================
+
+
+
+Ans #8) 
+
+CODE 
+
+void main () {
+ List <String> studentNames = [
+   'Ali',
+   'Jaffer',
+   'Kazim'
+ ];
+   List <dynamic> studentMarks = [418 , 435 , 375];
+
+
+print(studentNames[0]);
+print('Marks: ${studentMarks[0]}');
+  print('${studentMarks[0]/500*100}%');
+
+  print(studentNames[1]);
+  print('Marks: ${studentMarks[1]}');
+
+   print('${studentMarks[1]/500*100}%');
+   print(studentNames[2]);
+   print('Marks: ${studentMarks[2]}');
+
+    print('${studentMarks[2]/500*100}%');
+
+}
+  
+
+========================================================================================================================================
+
+
+
+Ans #9)
+
+
+ CODE 
+
+void main () 
+{
+  //5  Illegal variable names
+  
+  var 1illegal = 'ss';
+  var Illegal = 'ss';
+  var *illegal = 'sa';
+  var *&^*( = 'sa';
+  var 5322 = "kk";
+
+   // 5 Legal Variable names
+   var legal = 'Name';
+   var legal1 = 'name';
+   var legal_ = 'name';
+   var legal_1 = 'Name';
+   var legaL = 'Name';
+
+}
+
+
+
+========================================================================================================================================
+
+
+Ans #11)
+
+
+	CODE 
+
+
+void main () {
+ var customerName = 'Jawad';
+ var currentMonth = 'Decenmber';
+ var numberOfUnits = 500.2;
+ var chargesPerUnit = 3;
+ var calcThenetAmountPayable = chargesPerUnit*numberOfUnits;
+   var netAmountPayable = calcThenetAmountPayable;
+  print('Your Amount equals too before due date: $netAmountPayable');
+  var latePaymentCharge = 50;
+  var amountPayableAfterLatePayment = calcThenetAmountPayable + latePaymentCharge;
+   
+
+print('your Amount after Due date: ${amountPayableAfterLatePayment}');
+print('Kindly Pay The Bill On time');
+}
+
+
+
+
+
+
+
+
+
